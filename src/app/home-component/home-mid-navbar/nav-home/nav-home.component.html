@@ -1,0 +1,414 @@
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="fixed-column">
+        <div class="container-fluid1 bg-body-secondary pt-5">
+          <div class="container pt-5">
+            <div class="bg-secondary text-center rounded-2 py-2">
+              <span class="">{{ product1.para1 }}</span>
+            </div>
+            <div>
+              <p class="h1 pt-4" style="font-weight: 600; opacity: 0.8">
+                {{ product1.para2 }}
+              </p>
+            </div>
+            <div class="">
+              <p class="h5 lh-base" style="opacity: 0.8">
+                {{ product1.para3 }}
+              </p>
+            </div>
+            <div class="ps-3 mt-4 rounded-2 bg-info" style="display: flex">
+              <i
+                class="fas fa-chess-queen my-3"
+                style="font-size: 20px; color: rgba(202, 222, 220, 0.66)"
+              ></i>
+
+              <a class="btn">
+                <nav class="navbar">
+                  <p
+                    class="nav-item h5 font-weight-bold"
+                    (click)="toggleTab1($event)"
+                  >
+                    <a href="#" class="nav-link">{{product1.para4}}</a>
+                  </p>
+                </nav></a
+              >
+            </div>
+            <div class="ps-3 mt-2 rounded-2" style="display: flex">
+              <i
+                class="far fa-gem my-3"
+                style="font-size: 20px; color: rgba(48, 9, 94, 0.66)"
+              ></i>
+              <a class="btn">
+                <nav class="navbar">
+                  <p
+                    class="nav-item h5 font-weight-bold"
+                    (click)="toggleTab2($event)"
+                  >
+                    <a href="#" class="nav-link">Alveofit for Homecare</a>
+                  </p>
+                </nav></a
+              >
+            </div>
+            <div class="ps-3 mt-2 rounded-2" style="display: flex">
+              <i
+                class="far fa-user-circle my-3"
+                style="font-size: 20px; color: rgba(48, 9, 94, 0.66)"
+              ></i>
+              <a class="btn">
+                <nav class="navbar">
+                  <p
+                    class="nav-item h5 font-weight-bold"
+                    (click)="toggleTab3($event)"
+                  >
+                    <a href="#" class="nav-link">AlveoConnect for Pophealth</a>
+                  </p>
+                </nav></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-8 pt-5">
+      <div class="scrollable-column pt-5">
+        <!-- navbar item1 -->
+        <div *ngIf="tabOpen1" class="tab-content">
+          <div class="col-md-12 bg-white rounded-2">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mx-5">
+                  <div class="icon pt-5">
+                    <i
+                      class="far fa-user-circle mt-5"
+                      style="font-size: 60px; color: rgba(24, 27, 193, 0.66)"
+                    ></i>
+                  </div>
+                  <div>
+                    <p class="h2 pt-4" style="font-weight: 600; opacity: 0.8">
+                      {{ product2.para1 }}
+                    </p>
+                  </div>
+                  <div class="pt-5 text-center">
+                    <a
+                      href="http://localhost:4200/home-health"
+                      class="h6 text-primary"
+                      style="text-decoration: none"
+                      >{{ product2.para2 }}</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img
+                  [src]="product2.img1"
+                  alt="Image"
+                  class="img-fluid"
+                  style="height: 580px"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 bg-white rounded-2 mt-4">
+            <div class="row py-5">
+              <div class="col-md-6">
+                <div class="ps-5" style="display: flex">
+                  <i
+                    class="fas fa-blog"
+                    style="font-size: 40px; color: rgb(74, 124, 186)"
+                  ></i>
+                  <div class="ps-3">
+                    <p class="h5">{{ product3.para1 }}</p>
+                    <p class="h6 pe-5 lh-base">{{ product3.para1content }}</p>
+                  </div>
+                </div>
+                <div class="ps-5 mt-4" style="display: flex">
+                  <i
+                    class="fas fa-user-friends"
+                    style="font-size: 40px; color: rgb(74, 124, 186)"
+                  ></i>
+                  <div class="ps-3">
+                    <p class="h5">{{ product3.para3 }}</p>
+                    <p class="h6 pe-5 lh-base">{{ product3.para3content }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="" style="display: flex">
+                  <i
+                    class="fas fa-bullseye"
+                    style="font-size: 40px; color: rgb(74, 124, 186)"
+                  ></i>
+                  <div class="ps-3">
+                    <p class="h5 pe-5">{{ product3.para2 }}</p>
+                    <p class="h6 pe-5 lh-base">{{ product3.para2content }}</p>
+                  </div>
+                </div>
+                <div class="mt-4" style="display: flex">
+                  <i
+                    class="fas fa-tools"
+                    style="font-size: 40px; color: rgb(74, 124, 186)"
+                  ></i>
+                  <div class="ps-3">
+                    <p class="h5 pe-5">{{ product3.para4 }}</p>
+                    <p class="h6 pe-5 lh-base">{{ product3.para4content }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 pt-5 mb-2">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="ps-3" style="display: flex">
+                  <span class="bg-info px-3 ms-5 rounded-2">
+                    <i
+                      class="fas fa-chess-queen my-3"
+                      style="font-size: 20px; color: rgba(202, 222, 220, 0.66)"
+                    ></i>
+                    <a class="btn">
+                      <p class="h5 font-weight-bold my-2">
+                        {{ product3.last1 }}
+                      </p></a
+                    >
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="ps-3" style="display: flex">
+                  <a class="btn">
+                    <p class="h5 font-weight-bold my-2">
+                      {{ product3.last2 }}
+                    </p></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nav item2 -->
+        <div *ngIf="tabOpen2" class="tab-content">
+          <div class="col-md-12 bg-white rounded-2">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  [src]="product4.img2"
+                  alt="Image"
+                  class="img-fluid"
+                  style="height: 580px"
+                />
+              </div>
+              <div class="col-md-6">
+                <div class="mx-5">
+                  <div class="icon pt-5">
+                    <i
+                      class="far fa-user-circle mt-5"
+                      style="font-size: 60px; color: rgba(24, 27, 193, 0.66)"
+                    ></i>
+                  </div>
+                  <div>
+                    <p class="h2 pt-4" style="font-weight: 600; opacity: 0.8">
+                      {{ product4.para1 }}
+                    </p>
+                  </div>
+                  <div class="pt-5 text-center">
+                    <a
+                      href="http://localhost:4200/home-health"
+                      class="h6 text-primary"
+                      style="text-decoration: none"
+                      >{{ product4.para2 }}</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 bg-white rounded-2 mt-4">
+            <div class="row py-5">
+              <div class="col-md-6">
+                <div class="ps-5" style="display: flex">
+                  <i
+                    class="fas fa-blog"
+                    style="font-size: 40px; color: rgb(74, 124, 186)"
+                  ></i>
+                  <div class="ps-3">
+                    <p class="h5">{{ product4.para3 }}</p>
+                    <p class="h6 pe-5 lh-base">{{ product4.para3content }}</p>
+                  </div>
+                </div>
+                <div class="ps-5 mt-4" style="display: flex">
+                  <i
+                    class="fas fa-user-friends"
+                    style="font-size: 40px; color: rgb(74, 124, 186)"
+                  ></i>
+                  <div class="ps-3">
+                    <p class="h5">{{ product4.para4 }}</p>
+                    <p class="h6 pe-5 lh-base">{{ product4.para4content }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="" style="display: flex">
+                  <i
+                    class="fas fa-bullseye"
+                    style="font-size: 40px; color: rgb(74, 124, 186)"
+                  ></i>
+                  <div class="ps-3">
+                    <p class="h5 pe-5">{{ product4.para5 }}</p>
+                    <p class="h6 pe-5 lh-base">{{ product4.para5content }}</p>
+                  </div>
+                </div>
+                <div class="mt-4" style="display: flex">
+                  <i
+                    class="fas fa-tools"
+                    style="font-size: 40px; color: rgb(74, 124, 186)"
+                  ></i>
+                  <div class="ps-3">
+                    <p class="h5 pe-5">{{ product4.para6 }}</p>
+                    <p class="h6 pe-5 lh-base">{{ product4.para6content }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 pt-5 mb-2">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="ps-3" style="display: flex">
+                  <span class="bg-info px-3 ms-5 rounded-2">
+                    <i
+                      class="fas fa-chess-queen my-3"
+                      style="font-size: 20px; color: rgba(202, 222, 220, 0.66)"
+                    ></i>
+                    <a class="btn">
+                      <p class="h5 font-weight-bold my-2">
+                        {{ product4.last1 }}
+                      </p></a
+                    >
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="ps-3" style="display: flex">
+                  <a class="btn">
+                    <p class="h5 font-weight-bold my-2">
+                      {{ product4.last2 }}
+                    </p></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nav item3 -->
+        <div *ngIf="tabOpen3" class="tab-content">
+          <div class="col-md-12 bg-white rounded-2">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mx-5">
+                  <div class="icon pt-5">
+                    <i
+                      class="far fa-user-circle mt-5"
+                      style="font-size: 60px; color: rgba(24, 27, 193, 0.66)"
+                    ></i>
+                  </div>
+                  <div>
+                    <p class="h2 pt-4" style="font-weight: 600; opacity: 0.8">
+                      {{ product5.para1 }}
+                    </p>
+                  </div>
+                  <div class="pt-5 text-center">
+                    <a
+                      href="http://localhost:4200/home-health"
+                      class="h6 text-primary"
+                      style="text-decoration: none"
+                      >{{ product5.para2 }}</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img
+                  [src]="product5.img3"
+                  alt="Image"
+                  class="img-fluid"
+                  style="height: 480px"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 bg-white rounded-2 mt-4">
+            <div class="row py-5">
+              <div class="col-md-6">
+                <div class="ps-5" style="display: flex">
+                  <i
+                    class="fas fa-blog"
+                    style="font-size: 40px; color: rgb(74, 124, 186)"
+                  ></i>
+                  <div class="ps-3">
+                    <p class="h5">{{ product5.para3 }}</p>
+                    <p class="h6 pe-5 lh-base">{{ product5.para3content }}</p>
+                  </div>
+                </div>
+                <div class="ps-5 mt-4" style="display: flex">
+                  <i
+                    class="fas fa-user-friends"
+                    style="font-size: 40px; color: rgb(74, 124, 186)"
+                  ></i>
+                  <div class="ps-3">
+                    <p class="h5">{{ product5.para4 }}</p>
+                    <p class="h6 pe-5 lh-base">{{ product5.para4content }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="" style="display: flex">
+                  <i
+                    class="fas fa-bullseye"
+                    style="font-size: 40px; color: rgb(74, 124, 186)"
+                  ></i>
+                  <div class="ps-3">
+                    <p class="h5 pe-5">{{ product5.para5 }}</p>
+                    <p class="h6 pe-5 lh-base">{{ product5.para5content }}</p>
+                  </div>
+                </div>
+                <div class="mt-4" style="display: flex">
+                  <i
+                    class="fas fa-tools"
+                    style="font-size: 40px; color: rgb(74, 124, 186)"
+                  ></i>
+                  <div class="ps-3">
+                    <p class="h5 pe-5">{{ product5.para6 }}</p>
+                    <p class="h6 pe-5 lh-base">{{ product5.para6content }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 pt-5 mb-2">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="ps-3" style="display: flex">
+                  <span class="bg-info px-3 ms-5 rounded-2">
+                    <i
+                      class="fas fa-chess-queen my-3"
+                      style="font-size: 20px; color: rgba(202, 222, 220, 0.66)"
+                    ></i>
+                    <a class="btn">
+                      <p class="h5 font-weight-bold my-2">
+                        {{ product5.last1 }}
+                      </p></a
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

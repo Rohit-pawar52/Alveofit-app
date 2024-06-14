@@ -1,0 +1,50 @@
+.container-fluid {
+  background-color: rgb(84, 84, 240);
+  height: auto;
+  padding-bottom: 50px;
+}
+img{
+  width: 100%;
+}
+
+.container-scrollable {
+  max-height: calc(100vh - 50px); 
+  overflow-y: auto;
+}
+
+.fixed-column {
+  position: sticky;
+  top: 0;
+}
+
+.scrollable-column {
+  overflow-y: auto;
+}
+
+.content{
+  padding-top: 130px;
+  padding-right: 65px;
+}
+
+.img{
+  padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-top: 85px;
+    padding: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .secondheading {
+    margin-top: 20px;
+    padding: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .img {
+    margin-top: 2px;
+    padding: 0px;
+  }
+}

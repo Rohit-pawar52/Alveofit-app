@@ -1,0 +1,458 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="content pt-5">
+          <p class="h1 mt-4 lh-base">
+            Transforming the delivery of respiratory care
+          </p>
+          <p class="h5 mt-4 lh-base">
+            Our aim is to deliver a best-in-class ecosystem to manage
+            respiratory conditions such as Asthma/COPD and associated
+            conditions.
+          </p>
+          <div>
+            <a href="http://localhost:4200/contact" class="btn bg-white">
+              <span class="font-weight-bold m-2">Contact us</span>
+            </a>
+          </div>
+          <div class="pt-3">
+            <span>
+              <a class="btn bg-info py-2">
+                <span class="font-weight-bold m-2" (click)="openPopup1()"
+                  >I am a Patient</span
+                ></a
+              >
+              <a class="btn bg-info ms-2 py-2">
+                <span class="font-weight-bold m-2" (click)="openPopup2()"
+                  >I am a Provider</span
+                ></a
+              >
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 pt-5 mt-5">
+        <img
+          src="https://i0.wp.com/www.alveo.fit/wp-content/uploads/2022/03/Untitled-design-2.png?w=700&ssl=1"
+          alt="Image"
+          class="img-fluid"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 py-5">
+      <div>
+        <img
+          [src]="HealthContent.imageUrl"
+          alt="Image"
+          class="img-fluid rounded-4"
+        />
+      </div>
+      <div style="display: flex">
+        <div style="display: flex">
+          <i
+            class="fas fa-burn"
+            style="font-size: 50px; color: rgb(74, 124, 186)"
+          ></i>
+          <div>
+            <a
+              href="http://localhost:4200/alveoair-home"
+              style="text-decoration: none"
+            >
+              <p class="h5 ps-3 text-black">{{ HealthContent.alspiro }}</p>
+              <p class="h6 ps-3 text-black">{{ HealthContent.spirocontent }}</p>
+            </a>
+          </div>
+        </div>
+        <div class="ps-5" style="display: flex">
+          <i
+            class="far fa-credit-card"
+            style="font-size: 40px; color: rgb(74, 124, 186)"
+          ></i>
+          <div>
+            <a
+              href="http://localhost:4200/alveo-patient"
+              style="text-decoration: none"
+            >
+              <p class="h5 ps-3 text-black">{{ HealthContent.alapp }}</p>
+              <p class="h6 ps-3 text-black">{{ HealthContent.appcontent }}</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="content py-5 mx-5">
+        <div class="mx-3 pt-5" style="display: flex">
+          <i
+            class="far fa-plus-square"
+            style="font-size: 30px; color: rgb(64, 64, 194)"
+          ></i>
+          <p class="h4 mx-3 ps-1" style="font-weight: 600">
+            {{ HealthContent.heading1 }}
+          </p>
+        </div>
+        <div>
+          <p class="h1 mx-3 pt-3">{{ HealthContent.heading2 }}</p>
+        </div>
+        <div class="mx-3">
+          <p class="h5 lh-base py-2">{{ HealthContent.description }}</p>
+        </div>
+        <div class="pt-3">
+          <a
+            href="http://localhost:4200/home-health"
+            class="h5 mx-3 text-primary"
+            style="text-decoration: none"
+            >{{ HealthContent.heading3 }}</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="content py-5 mx-5">
+        <div class="mx-3 pt-5" style="display: flex">
+          <i
+            class="fas fa-comment-medical"
+            style="font-size: 30px; color: rgb(64, 64, 194)"
+          ></i>
+          <p class="h4 mx-3 ps-1" style="font-weight: 600">
+            {{ ClinicalContent.heading1 }}
+          </p>
+        </div>
+        <div>
+          <p class="h1 mx-3 pt-3">{{ ClinicalContent.heading2 }}</p>
+        </div>
+        <div class="mx-3">
+          <p class="h5 lh-base py-2">{{ ClinicalContent.description }}</p>
+        </div>
+        <div class="pt-3">
+          <a
+            href="http://localhost:4200/home-health"
+            class="h5 mx-3 text-primary"
+            style="text-decoration: none"
+            >{{ ClinicalContent.heading3 }}</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 py-5">
+      <div>
+        <img
+          [src]="ClinicalContent.imageUrl"
+          alt="Image"
+          class="img-fluid rounded-4"
+          style="height: 350px"
+        />
+      </div>
+      <div class="pt-5" style="display: flex">
+        <div style="display: flex">
+          <i
+            class="fas fa-dice-d6"
+            style="font-size: 45px; color: rgb(74, 124, 186)"
+          ></i>
+          <div>
+            <a
+              href="http://localhost:4200/alveoair-clinic"
+              style="text-decoration: none"
+            >
+              <p class="h5 ps-3 text-black">{{ ClinicalContent.easy }}</p>
+              <p class="h6 ps-3 text-black">
+                {{ ClinicalContent.easycontent }}
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="ps-5" style="display: flex">
+          <i
+            class="fas fa-tools"
+            style="font-size: 40px; color: rgb(74, 124, 186)"
+          ></i>
+          <div class="ps-3">
+            <p class="h5">{{ ClinicalContent.Advance }}</p>
+            <p class="h6 pe-5">{{ ClinicalContent.Advancecontent }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 py-5">
+      <div>
+        <img
+          [src]="TeleSpirometryContent.imageUrl"
+          alt="Image"
+          class="img-fluid rounded-4"
+        />
+      </div>
+      <div class="pt-5" style="display: flex">
+        <div style="display: flex">
+          <i
+            class="fas fa-burn"
+            style="font-size: 50px; color: rgb(74, 124, 186)"
+          ></i>
+          <div>
+            <p class="h5 ps-3">{{ TeleSpirometryContent.telespiro }}</p>
+            <p class="h6 ps-3">{{ TeleSpirometryContent.telecontent }}</p>
+          </div>
+        </div>
+        <div class="ps-5" style="display: flex">
+          <i
+            class="far fa-credit-card"
+            style="font-size: 40px; color: rgb(74, 124, 186)"
+          ></i>
+          <div>
+            <p class="h5 ps-3 text-black">
+              {{ TeleSpirometryContent.secured }}
+            </p>
+            <p class="h6 ps-3 text-black">
+              {{ TeleSpirometryContent.securedcontent }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="content py-5 mx-5">
+        <div class="mx-3 pt-5" style="display: flex">
+          <i
+            class="far fa-map"
+            style="font-size: 30px; color: rgb(64, 64, 194)"
+          ></i>
+          <p class="h4 mx-3 ps-1" style="font-weight: 600">
+            {{ TeleSpirometryContent.heading1 }}
+          </p>
+        </div>
+        <div>
+          <p class="h1 mx-3 pt-3">{{ TeleSpirometryContent.heading2 }}</p>
+        </div>
+        <div class="mx-3">
+          <p class="h5 lh-base py-2">{{ TeleSpirometryContent.description }}</p>
+        </div>
+        <div class="pt-3">
+          <a
+            href="http://localhost:4200/tele"
+            class="h5 mx-3 text-primary"
+            style="text-decoration: none"
+            >{{ TeleSpirometryContent.heading3 }}</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="content py-5 mx-5">
+        <div class="mx-3 pt-5 mt-5" style="display: flex">
+          <i
+            class="far fa-edit"
+            style="font-size: 30px; color: rgb(64, 64, 194)"
+          ></i>
+          <p class="h4 mx-3 ps-1" style="font-weight: 600">Research</p>
+        </div>
+        <div>
+          <p class="h1 mx-3 pt-3">
+            alveofit® Clinical Research solutions for deeper insights
+          </p>
+        </div>
+        <div class="mx-3">
+          <p class="h5 lh-base py-2">
+            A flexible and patient-centric clinical research ecosystem capturing
+            real-time digital endpoints.
+          </p>
+        </div>
+        <div class="pt-3">
+          <a
+            href="http://localhost:4200/research"
+            class="h5 mx-3 text-primary"
+            style="text-decoration: none"
+            >Greater insights from the field ></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 py-5">
+      <div>
+        <img
+          src="assets/img/service-4.webp"
+          alt="Image"
+          class="img-fluid rounded-4"
+          style="height: 350px"
+        />
+      </div>
+      <div class="pt-5" style="display: flex">
+        <div style="display: flex">
+          <i
+            class="far fa-file-pdf"
+            style="font-size: 45px; color: rgb(74, 124, 186)"
+          ></i>
+          <div>
+            <p class="h5 ps-3 text-black">Data driven</p>
+            <p class="h6 ps-3 text-black">
+              Monitor in real-time when every data point is captured.
+            </p>
+          </div>
+        </div>
+        <div class="ps-5" style="display: flex">
+          <i
+            class="far fa-clone"
+            style="font-size: 40px; color: rgb(74, 124, 186)"
+          ></i>
+          <div class="ps-3">
+            <p class="h5">Flexible and robust</p>
+            <p class="h6 pe-5">
+              Start a study in a matter of days and customize the KPIs to meet
+              any of your needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 py-5">
+      <div>
+        <img
+          src="assets/img/service-5.webp"
+          alt="Image"
+          class="img-fluid rounded-4"
+        />
+      </div>
+      <div class="pt-5" style="display: flex">
+        <div style="display: flex">
+          <i
+            class="fas fa-burn"
+            style="font-size: 50px; color: rgb(74, 124, 186)"
+          ></i>
+          <div>
+            <p class="h5 ps-3">Lung function assessment</p>
+            <p class="h6 ps-3">Conduct spirometry anywhere anytime</p>
+          </div>
+        </div>
+        <div class="ps-5" style="display: flex">
+          <i
+            class="far fa-credit-card"
+            style="font-size: 40px; color: rgb(74, 124, 186)"
+          ></i>
+          <div>
+            <p class="h5 ps-3 text-black">Health monitoring</p>
+            <p class="h6 ps-3 text-black">
+              Keep the track of lung health indicator.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="content py-5 mx-5">
+        <div class="mx-3 pt-5" style="display: flex">
+          <i
+            class="far fa-hospital"
+            style="font-size: 30px; color: rgb(64, 64, 194)"
+          ></i>
+          <p class="h4 mx-3 ps-1" style="font-weight: 600">
+            Occupational health
+          </p>
+        </div>
+        <div>
+          <p class="h1 mx-3 pt-3">
+            Protect your workforce from lung conditions get at work.
+          </p>
+        </div>
+        <div class="mx-3">
+          <p class="h5 lh-base py-2">
+            Long term exposure to irritants causes damages to the lungs.
+            alveofit® ecosystem helps you to monitor and manage your workforce.
+          </p>
+        </div>
+        <div class="pt-3">
+          <a
+            href="http://localhost:4200/occupational"
+            class="h5 mx-3 text-primary"
+            style="text-decoration: none"
+            >Start working with alveofit ></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="content pt-5 mx-5">
+        <div class="mx-3 pt-5 mt-5" style="display: flex">
+          <i
+            class="fas fa-skating"
+            style="font-size: 30px; color: rgb(64, 64, 194)"
+          ></i>
+          <p class="h4 mx-3 ps-1" style="font-weight: 600">Sports Medicine</p>
+        </div>
+        <div>
+          <p class="h1 mx-3 pt-3">Spirometry in the sports is essential</p>
+        </div>
+        <div class="mx-3">
+          <p class="h5 lh-base py-2">
+            Breathe in and breathe out directly associated with performance in
+            the field of sports.
+          </p>
+        </div>
+        <div class="pt-3">
+          <a
+            href="http://localhost:4200/medicine"
+            class="h5 mx-3 text-primary"
+            style="text-decoration: none"
+            >Track lung functions with alveoair ></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 pt-5">
+      <div>
+        <img
+          src="assets/img/service-6.webp"
+          alt="Image"
+          class="img-fluid rounded-4"
+          style="height: 350px"
+        />
+      </div>
+      <div class="pt-5" style="display: flex">
+        <div style="display: flex">
+          <i
+            class="far fa-file-pdf"
+            style="font-size: 45px; color: rgb(74, 124, 186)"
+          ></i>
+          <div>
+            <p class="h5 ps-3 text-black">Easy to Use</p>
+            <p class="h6 ps-3 text-black">
+              Conduct spirometry anytime anywhere
+            </p>
+          </div>
+        </div>
+        <div class="ps-5" style="display: flex">
+          <i
+            class="far fa-clone"
+            style="font-size: 40px; color: rgb(74, 124, 186)"
+          ></i>
+          <div class="ps-3">
+            <p class="h5">Tracking</p>
+            <p class="h6 pe-5">Keep the track your lung function to monitor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

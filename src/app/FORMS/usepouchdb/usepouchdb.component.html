@@ -1,0 +1,120 @@
+<div class="container-fluid">
+  <div class="container">
+      <div class="col-md-12 py-5">
+        <form [formGroup]="loginform" (ngSubmit)="submitForm()" class="my-form">
+          <h2 class="fw-bold text-center">
+            Provide your Details
+          </h2>
+          
+          <div class="form-group">
+            <label for="firstname">First Name:</label>
+            <input
+              type="text"
+              id="firstname"
+              placeholder="Enter your first name..."
+              name="firstname"
+              formControlName="firstname"
+              class="form-control"
+            />
+            <span
+            class="text-danger"
+            *ngIf="firstname && firstname.invalid && firstname.touched"
+            >Only alphabets are allowed
+          </span>
+          </div>
+  
+          <div class="form-group">
+            <label for="lastname">Last Name:</label>
+            <input
+              type="text"
+              id="lastname"
+              placeholder="Enter your lastname name..."
+              name="lastname"
+              formControlName="lastname"
+              class="form-control"
+            />
+            <span
+          class="text-danger"
+          *ngIf="lastname && lastname.invalid && lastname.touched"
+          >Only alphabets are allowed
+        </span>
+          </div>
+  
+          <div class="form-group">
+            <label for="number">Number:</label>
+            <input
+              type="text"
+              id="number"
+              placeholder="Enter your number..."
+              name="number"
+              formControlName="number"
+              class="form-control"
+            />
+            <span
+            class="text-danger"
+            *ngIf="number && number.invalid && number.touched"
+            >Enter 10 Digit Number</span
+          >
+          </div>
+  
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="text"
+              id="email"
+              placeholder="Enter your email..."
+              name="email"
+              formControlName="email"
+              class="form-control"
+            />
+            <span
+            class="text-danger"
+            *ngIf="email && email.invalid && email.touched"
+            >Invalid Email</span
+          >
+          </div>
+  
+          <div class="text-center pt-2">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+  
+  <div class="col-md-12 pt-3">
+      <h2 class="fw-bold text-center">User Information</h2>
+  
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Number</th>
+            <th>Email</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>{{ user.firstname | uppercase}}</td>
+            <td>{{ user.lastname | titlecase }}</td>
+            <td>{{ user.number }}</td>
+            <td>{{ user.email }}</td>
+            <td>
+              <button
+              class="btn btn-primary ml-1"
+              (click)="editUser(user._id)"
+            >
+              Edit
+            </button>
+              <button
+                class="btn btn-danger  ml-1"
+                (click)="deleteUser(user._id)"
+              >
+                Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

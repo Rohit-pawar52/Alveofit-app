@@ -1,0 +1,18 @@
+
+.award-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+  }
+  
+  .award-item {
+    padding: 15px;
+  }
+  
+  .award-item img {
+    width: 240px;
+    height: auto;
+  }
+  

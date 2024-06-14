@@ -1,0 +1,8 @@
+.container-fluid{
+    background-color: rgb(253, 255, 255);
+    opacity: 0.8;
+}
+.container a{
+    text-decoration: none;
+    color: black;
+}

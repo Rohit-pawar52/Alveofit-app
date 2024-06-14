@@ -1,0 +1,29 @@
+nav {
+  position: relative;
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+nav a {
+  margin-right: 0px;
+  max-width: 100%;
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+img.logo {
+  height: 40px;
+  width: auto;
+}
+.navbar-toggler {
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+}
+
+.nav-item{
+  margin-right: 10px;
+}

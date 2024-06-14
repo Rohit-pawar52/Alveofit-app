@@ -1,0 +1,14 @@
+.container-fluid{
+    background-color: rgb(245, 239, 239);
+    padding: 60px;
+    height: 90vh;
+}
+.container{
+    width: 120vh;
+    height:fit-content;
+}
+img{
+    height: 380px;
+    width: 100%;
+    margin-left: 11px;
+}

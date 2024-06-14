@@ -1,0 +1,26 @@
+.container-fluid {
+    background-color: rgb(84, 84, 240);
+    height: auto;
+    padding-bottom: 50px;
+  }
+  img{
+    width: 100%;
+  }
+  
+  .container-scrollable {
+    max-height: calc(100vh - 50px); /* Adjust as needed */
+    overflow-y: auto;
+  }
+  
+  .fixed-column {
+    position: sticky;
+    top: 0;
+    /* Optionally set width if needed */
+  }
+  
+  .scrollable-column {
+    /* Optionally set max-height if needed */
+    overflow-y: auto;
+  }
+  
+  

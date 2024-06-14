@@ -1,0 +1,14 @@
+<div class="award">
+    <div
+      class="h1 award-head text-center pt-2"
+      style="font-weight: bold; opacity: 0.6"
+    >
+      Recognitions and Awards
+    </div>
+    <div class="award-container pt-5">
+      <div class="award-item" *ngFor="let award of awards">
+        <img [src]="award" alt="award" />
+      </div>
+    </div>
+  </div>
+  

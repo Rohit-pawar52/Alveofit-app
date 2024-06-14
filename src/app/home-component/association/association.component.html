@@ -1,0 +1,10 @@
+<div class="association">
+    <div class="h1 association-head text-center pt-2" style="font-weight: bold">
+      Our associations
+    </div>
+    <div class="association-container pt-5">
+      <div class="association-item" *ngFor="let association of associations">
+        <img [src]="association" alt="association" />
+      </div>
+    </div>
+  </div>

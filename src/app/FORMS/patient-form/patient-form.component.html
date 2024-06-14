@@ -1,0 +1,127 @@
+<div class="container">
+  <div class="row pt-5">
+    <div class="col-md-6">
+      <form [formGroup]="loginform" (ngSubmit)="submitform()" class="my-form">
+        <h1 class="fw-bold pt-3">Let’s join alveofit ecosystem</h1>
+        <div class="form-group-row pt-2">
+          <div class="form-group">
+            <label for="firstname">First Name:</label>
+            <input
+              type="text"
+              id="firstname"
+              placeholder="First Name"
+              name="firstname"
+              formControlName="firstname"
+              class="form-control p-2"
+            />
+            <span
+              class="text-danger"
+              *ngIf="firstname && firstname.invalid && firstname.touched"
+              >Only alphabets are allowed
+            </span>
+          </div>
+
+          <div class="form-group">
+            <label for="lastname">Last Name:</label>
+            <input
+              type="text"
+              id="lastname"
+              placeholder="Last Name"
+              name="lastname"
+              formControlName="lastname"
+              class="form-control p-2"
+            />
+            <span
+              class="text-danger"
+              *ngIf="lastname && lastname.invalid && lastname.touched"
+              >Only alphabets are allowed
+            </span>
+          </div>
+        </div>
+        <div class="form-group-row pt-3">
+          <div class="form-group">
+            <label for="email">Email address*</label>
+            <input
+              type="text"
+              id="email"
+              placeholder="email@pixfort.com"
+              name="email"
+              formControlName="email"
+              class="form-control p-2"
+            />
+            <span
+              class="text-danger"
+              *ngIf="email && email.invalid && email.touched"
+              >Invalid Email</span
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="number">Contact number*</label>
+            <input
+              type="text"
+              id="number"
+              placeholder="Contact Number"
+              name="number"
+              formControlName="number"
+              class="form-control p-2"
+            />
+            <span
+              class="text-danger"
+              *ngIf="number && number.invalid && number.touched"
+              >Enter 10 Digit Number</span
+            >
+          </div>
+        </div>
+        <div style="width: 100%;" class="form-group pt-3">
+          <label for="select">How soon you want to start?*</label>
+          <select name="options" id="options" formControlName="options" class="form-control p-2">
+            <option value="Select" disabled selected>Select</option>
+            <option value="Immediately">Immediately</option>
+            <option value="Within a weekt">Within a week</option>
+            <option value="Just Exploring">Just Exploring</option>
+          </select>
+          <span class="text-danger" *ngIf="options && options.invalid && options.touched">Select an option</span>
+        </div>
+
+        <div class="form-group py-3">
+          <button type="submit" class="btn btn-primary py-3 px-5">
+            Submit Form
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-md-6">
+        <div class="step">
+          <img src="assets/img/yes.png" alt="">
+          <div class="content">
+            <h1>Step1</h1>
+            <p>Fill this form</p>
+          </div>
+        </div>
+        <div class="step">
+          <img src="assets/img/yes.png" alt="">
+          <div class="content">
+            <h1>Step2</h1>
+            <p>We will get in touch with you</p>
+          </div>
+        </div>
+        <div class="step">
+          <img src="assets/img/yes.png" alt="">
+          <div class="content">
+            <h1>Step3</h1>
+            <p>Receive onboarding kit</p>
+          </div>
+        </div>
+        <div class="step">
+          <img src="assets/img/yes.png" alt="">
+          <div class="content">
+            <h1>Step4</h1>
+            <p>Keep engaging your patient and improve care-delivery</p>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</div>

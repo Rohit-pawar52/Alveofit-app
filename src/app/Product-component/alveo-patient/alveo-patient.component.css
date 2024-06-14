@@ -1,0 +1,11 @@
+.container-fluid {
+    background-color: rgb(126, 126, 126);
+    height: 100vh;
+  }
+  img{
+    width: 450px
+  }
+  .content p{
+    color: rgb(245, 235, 235);
+  }
+  

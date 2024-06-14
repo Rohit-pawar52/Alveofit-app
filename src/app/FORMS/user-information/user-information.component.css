@@ -1,0 +1,7 @@
+.container-fluid {
+  background: rgb(242, 244, 245);
+  padding: 10px;
+}
+tr th {
+  background-color: #5588ee;
+}
